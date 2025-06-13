@@ -259,13 +259,13 @@ body {
 
 /* Bright Eye-Catching CTA Button */
 .bright-cta {
-  background: linear-gradient(135deg, #FFD700, #FFA500) !important;
-  color: #1B1F23 !important;
+  background-color: var(--accent-color) !important;
+  color: var(--text-dark) !important;
   font-size: 1.1rem !important;
   font-weight: 600 !important;
   padding: 1.4rem 3.5rem !important;
   border-radius: 50px !important;
-  box-shadow: 0 15px 40px rgba(255, 215, 0, 0.4);
+  box-shadow: 0 15px 40px rgba(181, 201, 154, 0.4);
   text-transform: uppercase;
   letter-spacing: 2px;
   border: none;
@@ -294,8 +294,8 @@ body {
 
 .bright-cta:hover {
   transform: translateY(-4px) scale(1.05) !important;
-  box-shadow: 0 20px 50px rgba(255, 215, 0, 0.6) !important;
-  background: linear-gradient(135deg, #FFA500, #FFD700) !important;
+  box-shadow: 0 20px 50px rgba(181, 201, 154, 0.6) !important;
+  background-color: #A8C686 !important;
 }
 
 .bright-cta:active {
