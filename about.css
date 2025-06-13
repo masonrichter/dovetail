@@ -1,0 +1,289 @@
+/* About Page Specific Styles */
+
+/* Active navigation state */
+.navbar ul li a.active {
+  color: var(--accent-color) !important;
+  font-weight: 600;
+}
+
+.navbar ul li a.active::after {
+  width: 100%;
+}
+
+/* About Hero Section */
+.about-hero {
+  height: 80vh;
+  background: url('hero-bg.png') no-repeat center center;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  position: relative;
+  padding-top: 80px;
+}
+
+.about-hero::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to bottom, rgba(27, 31, 35, 0.8), rgba(46, 58, 89, 0.9));
+}
+
+.about-hero-overlay {
+  position: relative;
+  z-index: 2;
+  width: 100%;
+}
+
+.about-hero-content {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 2rem;
+  text-align: center;
+}
+
+.about-hero h1 {
+  font-size: 3.5rem;
+  font-weight: 700;
+  color: var(--text-light);
+  margin-bottom: 2rem;
+  line-height: 1.2;
+}
+
+.hero-bridge {
+  margin: 2rem 0;
+}
+
+.bridge-icon {
+  font-size: 4rem;
+  margin: 1rem 0;
+  opacity: 0.8;
+}
+
+.about-tagline {
+  font-size: 2.5rem;
+  font-weight: 600;
+  color: var(--accent-color);
+  margin-bottom: 1rem;
+}
+
+.about-intro {
+  font-size: 1.3rem;
+  color: var(--text-light);
+  margin-bottom: 2rem;
+  opacity: 0.9;
+}
+
+/* About Main Content */
+.about-main {
+  padding: 6rem 2rem;
+  background-color: rgba(27, 31, 35, 0.95);
+}
+
+.about-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.about-text h2 {
+  font-size: 2.5rem;
+  margin-bottom: 2rem;
+  color: var(--text-light);
+}
+
+.lead-paragraph {
+  font-size: 1.3rem;
+  line-height: 1.8;
+  margin-bottom: 2rem;
+  color: var(--text-light);
+  font-weight: 500;
+  max-width: 900px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.about-text p {
+  font-size: 1.1rem;
+  line-height: 1.8;
+  color: var(--text-light);
+  opacity: 0.9;
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Philosophy Section */
+.our-philosophy {
+  padding: 6rem 2rem;
+  background-color: rgba(46, 58, 89, 0.95);
+}
+
+.philosophy-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.our-philosophy h2 {
+  font-size: 2.5rem;
+  margin-bottom: 3rem;
+  color: var(--text-light);
+}
+
+.philosophy-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2rem;
+}
+
+.philosophy-card {
+  background-color: rgba(27, 31, 35, 0.5);
+  padding: 2.5rem 2rem;
+  border-radius: 12px;
+  border: 1px solid rgba(181, 201, 154, 0.2);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  text-align: center;
+}
+
+.philosophy-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.3);
+  border-color: rgba(181, 201, 154, 0.4);
+}
+
+.card-icon {
+  font-size: 3rem;
+  margin-bottom: 1.5rem;
+  opacity: 0.8;
+}
+
+.philosophy-card h3 {
+  color: var(--accent-color);
+  margin-bottom: 1rem;
+  font-size: 1.4rem;
+  font-weight: 600;
+}
+
+.philosophy-card p {
+  color: var(--text-light);
+  opacity: 0.9;
+  line-height: 1.6;
+  margin: 0;
+}
+
+/* Why Choose Us Section */
+.why-choose-us {
+  padding: 6rem 2rem;
+  background-color: rgba(27, 31, 35, 0.95);
+}
+
+.why-container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.why-content h2 {
+  font-size: 2.5rem;
+  margin-bottom: 3rem;
+  color: var(--text-light);
+  text-align: center;
+}
+
+.why-points {
+  display: grid;
+  gap: 3rem;
+}
+
+.why-point {
+  display: flex;
+  align-items: flex-start;
+  gap: 2rem;
+  padding: 2rem;
+  background-color: rgba(46, 58, 89, 0.3);
+  border-radius: 12px;
+  border: 1px solid rgba(181, 201, 154, 0.2);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.why-point:hover {
+  transform: translateX(10px);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+}
+
+.point-number {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: var(--accent-color);
+  opacity: 0.7;
+  min-width: 80px;
+  text-align: center;
+}
+
+.point-content h3 {
+  color: var(--text-light);
+  margin-bottom: 1rem;
+  font-size: 1.4rem;
+  font-weight: 600;
+}
+
+.point-content p {
+  color: var(--text-light);
+  opacity: 0.9;
+  line-height: 1.7;
+  margin: 0;
+  font-size: 1.1rem;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .about-hero h1 {
+    font-size: 2.5rem;
+  }
+  
+  .about-tagline {
+    font-size: 2rem;
+  }
+  
+  .about-intro {
+    font-size: 1.1rem;
+  }
+  
+  .lead-paragraph {
+    font-size: 1.1rem;
+  }
+  
+  .philosophy-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .why-point {
+    flex-direction: column;
+    text-align: center;
+    gap: 1rem;
+  }
+  
+  .point-number {
+    min-width: auto;
+  }
+  
+  .why-point:hover {
+    transform: translateY(-5px);
+  }
+}
+
+@media (max-width: 480px) {
+  .about-hero h1 {
+    font-size: 2rem;
+  }
+  
+  .about-tagline {
+    font-size: 1.5rem;
+  }
+  
+  .bridge-icon {
+    font-size: 3rem;
+  }
+}
