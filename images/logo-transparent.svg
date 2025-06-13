@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 300" width="400" height="300">
+  <!-- Black curved lines forming the main shape -->
+  <path d="M20 20 Q80 10 140 40 Q180 60 200 100 Q220 140 180 180 Q140 220 100 200 Q60 180 40 140 Q20 100 20 60 Z" 
+        fill="none" 
+        stroke="#1B1F23" 
+        stroke-width="12" 
+        stroke-linecap="round"/>
+  
+  <path d="M280 10 Q340 5 380 30 Q400 50 390 80 Q380 110 350 130 Q320 150 290 140 Q260 130 250 100 Q240 70 260 50 Q280 30 280 10 Z" 
+        fill="none" 
+        stroke="#1B1F23" 
+        stroke-width="12" 
+        stroke-linecap="round"/>
+  
+  <!-- Green checkmark -->
+  <path d="M150 210 L180 240 L240 180" 
+        fill="none" 
+        stroke="#B5C99A" 
+        stroke-width="8" 
+        stroke-linecap="round" 
+        stroke-linejoin="round"/>
+</svg> 
