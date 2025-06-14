@@ -163,40 +163,40 @@
 
 @media (max-width: 1024px) {
   .team-member {
-    grid-template-columns: 1fr;
-  }
+  grid-template-columns: 1fr;
+}
 
   .member-image {
-    max-width: 300px;
+  max-width: 300px;
     margin: 0 auto;
-  }
+}
 }
 
 @media (max-width: 768px) {
   .team-hero h1 {
-    font-size: 2.5rem;
-  }
+  font-size: 2.5rem;
+}
 
   .team-hero .lead {
-    font-size: 1.2rem;
-  }
+  font-size: 1.2rem;
+}
 
   .contact-grid {
-    grid-template-columns: 1fr;
+  grid-template-columns: 1fr;
     gap: 2rem;
-  }
+}
 
   .container {
-    padding: 0 1rem;
-  }
+  padding: 0 1rem;
+}
 }
 
 @media (max-width: 480px) {
   .team-member {
-    padding: 1rem;
-  }
+  padding: 1rem;
+}
 
   .member-info h2 {
-    font-size: 1.8rem;
-  }
-} 
+  font-size: 1.8rem;
+}
+}

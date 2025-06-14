@@ -240,50 +240,50 @@
 /* Responsive Design */
 @media (max-width: 768px) {
   .about-hero h1 {
-    font-size: 2.5rem;
-  }
-  
+  font-size: 2.5rem;
+}
+
   .about-tagline {
-    font-size: 2rem;
-  }
-  
+  font-size: 2rem;
+}
+
   .about-intro {
-    font-size: 1.1rem;
-  }
-  
+  font-size: 1.1rem;
+}
+
   .lead-paragraph {
-    font-size: 1.1rem;
-  }
-  
+  font-size: 1.1rem;
+}
+
   .philosophy-grid {
-    grid-template-columns: 1fr;
-  }
-  
+  grid-template-columns: 1fr;
+}
+
   .why-point {
-    flex-direction: column;
+  flex-direction: column;
     text-align: center;
     gap: 1rem;
-  }
-  
+}
+
   .point-number {
-    min-width: auto;
-  }
-  
+  min-width: auto;
+}
+
   .why-point:hover {
-    transform: translateY(-5px);
-  }
+  transform: translateY(-5px);
+}
 }
 
 @media (max-width: 480px) {
   .about-hero h1 {
-    font-size: 2rem;
-  }
-  
+  font-size: 2rem;
+}
+
   .about-tagline {
-    font-size: 1.5rem;
-  }
-  
+  font-size: 1.5rem;
+}
+
   .bridge-icon {
-    font-size: 3rem;
-  }
+  font-size: 3rem;
+}
 }
