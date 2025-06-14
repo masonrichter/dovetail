@@ -2,20 +2,34 @@
   --primary-color: #1B1F23;
   --secondary-color: #2E3A59;
   --accent-color: #B5C99A;
-  --text-light: #F5F5F5;
-  --text-muted: rgba(245, 245, 245, 0.85);
+  --text-light: #FFFFFF;
+  --text-bright: #F8F9FA;
+  --text-muted: rgba(248, 249, 250, 0.9);
+  --text-secondary: rgba(248, 249, 250, 0.75);
   --text-dark: #1B1F23;
   --gradient-start: #1B1F23;
   --gradient-end: #2E3A59;
   --transition-speed: 0.3s;
   --box-shadow: 0 4px 25px rgba(0, 0, 0, 0.15);
   --accent-shadow: 0 4px 12px rgba(181, 201, 154, 0.3);
-  --text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+  --text-shadow: 0 1px 3px rgba(0, 0, 0, 0.4);
+  --text-shadow-strong: 0 2px 4px rgba(0, 0, 0, 0.6);
   --spacing-xs: 0.5rem;
   --spacing-sm: 1rem;
   --spacing-md: 1.5rem;
-  --spacing-lg: 2rem;
-  --spacing-xl: 3rem;
+  --spacing-lg: 2.5rem;
+  --spacing-xl: 4rem;
+  --font-size-xs: 0.875rem;
+  --font-size-sm: 1rem;
+  --font-size-base: 1.125rem;
+  --font-size-lg: 1.25rem;
+  --font-size-xl: 1.5rem;
+  --font-size-2xl: 2rem;
+  --font-size-3xl: 2.5rem;
+  --font-size-4xl: 3.5rem;
+  --line-height-tight: 1.2;
+  --line-height-normal: 1.6;
+  --line-height-relaxed: 1.8;
 }
 
 /* Apply smooth scrolling for better UX */
@@ -23,6 +37,7 @@ html {
   scroll-behavior: smooth;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  font-size: 16px;
 }
 
 body {
@@ -33,17 +48,53 @@ body {
   background: linear-gradient(-45deg, var(--gradient-start), var(--gradient-end), var(--gradient-start), var(--gradient-end));
   background-size: 400% 400%;
   animation: gradient 12s ease infinite;
-  line-height: 1.7;
+  line-height: var(--line-height-relaxed);
   min-height: 100vh;
   overflow-x: hidden;
   font-display: swap;
   letter-spacing: -0.01em;
+  font-size: var(--font-size-base);
+  font-weight: 400;
 }
 
 h1, h2, h3, h4, h5, h6 {
-  line-height: 1.2;
-  letter-spacing: -0.02em;
-  margin-bottom: 1.5rem;
+  line-height: var(--line-height-tight);
+  letter-spacing: -0.025em;
+  margin-bottom: var(--spacing-lg);
+  font-weight: 600;
+  color: var(--text-bright);
+  text-shadow: var(--text-shadow);
+}
+
+h1 {
+  font-size: var(--font-size-4xl);
+  font-weight: 300;
+  margin-bottom: var(--spacing-xl);
+}
+
+h2 {
+  font-size: var(--font-size-3xl);
+  margin-bottom: var(--spacing-lg);
+}
+
+h3 {
+  font-size: var(--font-size-xl);
+  margin-bottom: var(--spacing-md);
+  color: var(--accent-color);
+}
+
+h4 {
+  font-size: var(--font-size-lg);
+  margin-bottom: var(--spacing-sm);
+  color: var(--accent-color);
+}
+
+p {
+  margin-bottom: var(--spacing-md);
+  line-height: var(--line-height-normal);
+  color: var(--text-muted);
+  font-size: var(--font-size-base);
+  letter-spacing: -0.005em;
 }
 
 /* Optimize animations for better performance */
@@ -54,17 +105,12 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .section-title {
-  font-size: 2.5rem;
-  margin-bottom: 2rem;
+  font-size: var(--font-size-3xl);
+  margin-bottom: var(--spacing-lg);
   text-align: center;
-  color: var(--text-light);
-}
-
-p {
-  margin-bottom: 1.5rem;
-  line-height: 1.7;
-  color: var(--text-muted);
-  font-size: 1.125rem;
+  color: var(--text-bright);
+  text-shadow: var(--text-shadow);
+  letter-spacing: -0.02em;
 }
 
 .navbar {
@@ -218,14 +264,14 @@ p {
 }
 
 .brand-name {
-  font-size: 4rem !important;
+  font-size: var(--font-size-4xl) !important;
   font-weight: 300;
-  color: var(--text-light);
-  margin-bottom: 1rem !important;
-  line-height: 1.1;
+  color: var(--text-bright);
+  margin-bottom: var(--spacing-md) !important;
+  line-height: var(--line-height-tight);
   letter-spacing: -0.03em;
   font-family: "Inter", sans-serif;
-  text-shadow: var(--text-shadow);
+  text-shadow: var(--text-shadow-strong);
 }
 
 .brand-divider {
@@ -238,27 +284,27 @@ p {
 }
 
 .brand-tagline {
-  font-size: 1.75rem !important;
-  font-weight: 400;
+  font-size: var(--font-size-xl) !important;
+  font-weight: 500;
   color: var(--accent-color);
   margin: 0;
-  letter-spacing: 0.02em;
+  letter-spacing: 0.05em;
   text-transform: uppercase;
-  opacity: 0.95;
-  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+  opacity: 1;
+  text-shadow: var(--text-shadow);
 }
 
 .hero-description {
-  font-size: 1.25rem !important;
-  color: rgba(245, 245, 245, 0.9);
-  margin-bottom: 2rem !important;
+  font-size: var(--font-size-lg) !important;
+  color: var(--text-muted);
+  margin-bottom: var(--spacing-xl) !important;
   font-weight: 400;
-  line-height: 1.6;
-  max-width: 600px;
+  line-height: var(--line-height-normal);
+  max-width: 650px;
   margin-left: auto;
   margin-right: auto;
-  letter-spacing: -0.01em;
-  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+  letter-spacing: -0.005em;
+  text-shadow: var(--text-shadow);
 }
 
 .cta-section {
@@ -267,13 +313,14 @@ p {
 }
 
 .cta-subtitle {
-  font-size: 0.9rem;
-  color: var(--text-light);
-  margin-top: 1rem;
-  opacity: 0.75 !important;
-  font-weight: 300;
-  letter-spacing: 1px;
+  font-size: var(--font-size-sm);
+  color: var(--text-secondary);
+  margin-top: var(--spacing-md);
+  opacity: 1;
+  font-weight: 400;
+  letter-spacing: 0.02em;
   font-style: italic;
+  text-shadow: var(--text-shadow);
 }
 
 .cta-group {
@@ -398,16 +445,18 @@ p {
 .service-card h3 {
   color: var(--accent-color);
   margin-bottom: var(--spacing-sm);
-  font-size: 1.5rem;
+  font-size: var(--font-size-xl);
   font-weight: 600;
-  letter-spacing: -0.01em;
+  letter-spacing: -0.015em;
+  text-shadow: var(--text-shadow);
 }
 
 .service-card p {
   color: var(--text-muted);
-  line-height: 1.6;
+  line-height: var(--line-height-normal);
   margin: 0;
-  font-size: 1.1rem;
+  font-size: var(--font-size-base);
+  letter-spacing: -0.005em;
 }
 
 .approach {
@@ -519,105 +568,109 @@ p {
 
 @media (max-width: 768px) {
   .nav-container {
-  flex-direction: column;
+    flex-direction: column;
     padding: 1rem;
-}
+  }
 
   .navbar ul {
-  flex-direction: column;
+    flex-direction: column;
     width: 100%;
     gap: 1rem;
     margin-top: 1rem;
     align-items: center;
-}
+  }
 
   .nav-logo {
-  margin: 0 auto;
-}
+    margin: 0 auto;
+  }
 
   .brand-name {
-  font-size: 3rem !important;
-    letter-spacing: -0.02em;
-}
+    font-size: calc(var(--font-size-4xl) * 0.8) !important;
+    letter-spacing: -0.025em;
+  }
 
   .brand-tagline {
-  font-size: 1.4rem !important;
-    letter-spacing: 0.01em;
-}
+    font-size: calc(var(--font-size-xl) * 0.9) !important;
+    letter-spacing: 0.03em;
+  }
 
   .hero-description {
-  font-size: 1.1rem !important;
+    font-size: var(--font-size-base) !important;
     padding: 0 var(--spacing-md);
-}
+    max-width: 100%;
+  }
 
   .services-grid,
   .approach-steps,
   .resources-grid {
-  grid-template-columns: 1fr;
-    gap: 1.5rem;
-    padding: 0 1rem;
-}
+    grid-template-columns: 1fr;
+    gap: var(--spacing-md);
+    padding: 0 var(--spacing-md);
+  }
 
   .about-stats {
-  flex-direction: column;
-    gap: 2rem;
-}
+    flex-direction: column;
+    gap: var(--spacing-lg);
+  }
 
   .contact-info {
-  flex-direction: column;
-    gap: 2rem;
-}
+    flex-direction: column;
+    gap: var(--spacing-lg);
+  }
 
   .footer-content {
-  grid-template-columns: 1fr;
-    gap: 2rem;
+    grid-template-columns: 1fr;
+    gap: var(--spacing-lg);
     text-align: center;
-}
+  }
 
   html {
-  font-size: 15px;
-}
+    font-size: 15px;
+  }
 
   .section-title {
-  font-size: 2rem;
-}
+    font-size: var(--font-size-2xl);
+  }
 
   .service-card h3 {
-  font-size: 1.3rem;
-}
+    font-size: var(--font-size-lg);
+  }
 }
 
 @media (max-width: 480px) {
   .brand-name {
-  font-size: 2.5rem !important;
-}
+    font-size: calc(var(--font-size-4xl) * 0.65) !important;
+    letter-spacing: -0.02em;
+  }
 
   .brand-tagline {
-  font-size: 1.2rem !important;
-}
+    font-size: var(--font-size-base) !important;
+    letter-spacing: 0.02em;
+  }
 
   .hero-description {
-  font-size: 1rem !important;
-}
+    font-size: var(--font-size-sm) !important;
+  }
 
   .cta-button {
-  width: 100%;
+    width: 100%;
     text-align: center;
-}
+    padding: var(--spacing-md) var(--spacing-lg);
+  }
 
   .service-card,
   .approach-content,
   .resources-content {
-  padding: 1.5rem;
-}
+    padding: var(--spacing-md);
+  }
 
   html {
-  font-size: 14px;
-}
+    font-size: 14px;
+  }
 
   .section-title {
-  font-size: 1.75rem;
-}
+    font-size: var(--font-size-xl);
+  }
 }
 
 .nav-logo img {
@@ -645,16 +698,18 @@ p {
 }
 
 .about h2 {
-  font-size: 2.5rem;
-  margin-bottom: 2rem;
-  color: var(--text-light);
+  font-size: var(--font-size-3xl);
+  margin-bottom: var(--spacing-lg);
+  color: var(--text-bright);
+  text-shadow: var(--text-shadow);
 }
 
 .about p {
-  font-size: 1.2rem;
-  line-height: 1.7;
+  font-size: var(--font-size-lg);
+  line-height: var(--line-height-relaxed);
   margin-bottom: var(--spacing-lg);
   color: var(--text-muted);
+  letter-spacing: -0.005em;
 }
 
 .about-stats {
@@ -674,14 +729,16 @@ p {
 .stat h3 {
   color: var(--accent-color);
   margin-bottom: var(--spacing-xs);
-  font-size: 1.4rem;
-  letter-spacing: -0.01em;
+  font-size: var(--font-size-lg);
+  letter-spacing: -0.015em;
+  text-shadow: var(--text-shadow);
 }
 
 .stat p {
-  font-size: 1.1rem;
-  line-height: 1.6;
+  font-size: var(--font-size-base);
+  line-height: var(--line-height-normal);
   color: var(--text-muted);
+  letter-spacing: -0.005em;
 }
 
 /* Resources Section */
@@ -943,11 +1000,11 @@ p {
 
 @media (max-width: 768px) {
   .mobile-menu-btn {
-  display: block;
-}
+    display: block;
+  }
 
   .nav-menu {
-  position: fixed;
+    position: fixed;
     top: 0;
     right: -100%;
     width: 100%;
@@ -957,23 +1014,23 @@ p {
     transition: all 0.3s ease;
     opacity: 0;
     visibility: hidden;
-}
+  }
 
   .nav-menu.active {
-  right: 0;
+    right: 0;
     opacity: 1;
     visibility: visible;
-}
+  }
 
   .mobile-menu-btn.active span:nth-child(1) {
-  transform: rotate(45deg) translate(5px, 5px);
-}
+    transform: rotate(45deg) translate(5px, 5px);
+  }
 
   .mobile-menu-btn.active span:nth-child(2) {
-  opacity: 0;
-}
+    opacity: 0;
+  }
 
   .mobile-menu-btn.active span:nth-child(3) {
-  transform: rotate(-45deg) translate(7px, -6px);
-}
+    transform: rotate(-45deg) translate(7px, -6px);
+  }
 }
