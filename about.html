@@ -16,13 +16,18 @@
       <a href="index.html" class="nav-logo">
         <img src="images/logo-transparent.svg" alt="Dovetail Wealth Management">
       </a>
-      <ul>
+      <button class="mobile-menu-btn" aria-label="Toggle menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+      <ul class="nav-menu">
         <li><a href="index.html">Home</a></li>
         <li><a href="about.html" class="active">About</a></li>
         <li><a href="team.html">Team</a></li>
-        <li><a href="#services">Services</a></li>
-        <li><a href="#resources">Resources</a></li>
-        <li><a href="#contact" class="nav-cta">Schedule Meeting</a></li>
+        <li><a href="index.html#services">Services</a></li>
+        <li><a href="index.html#resources">Resources</a></li>
+        <li><a href="index.html#contact" class="nav-cta">Schedule Meeting</a></li>
       </ul>
     </div>
   </nav>
@@ -164,5 +169,26 @@
       <p>&copy; 2024 Dovetail Wealth Management. All rights reserved.</p>
     </div>
   </footer>
+
+  <script>
+    // Mobile menu functionality
+    const mobileMenuBtn = document.querySelector('.mobile-menu-btn');
+    const navMenu = document.querySelector('.nav-menu');
+    
+    if (mobileMenuBtn && navMenu) {
+      mobileMenuBtn.addEventListener('click', () => {
+        mobileMenuBtn.classList.toggle('active');
+        navMenu.classList.toggle('active');
+      });
+
+      // Close mobile menu when clicking a link
+      document.querySelectorAll('.nav-menu a').forEach(link => {
+        link.addEventListener('click', () => {
+          mobileMenuBtn.classList.remove('active');
+          navMenu.classList.remove('active');
+        });
+      });
+    }
+  </script>
 </body>
 </html>

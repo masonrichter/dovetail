@@ -1,6 +1,11 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 80 80" width="80" height="80">
+  <!-- White circular background -->
   <circle cx="40" cy="40" r="38" fill="#FFFFFF" stroke="#E5E5E5" stroke-width="1"/>
-  <path d="M15 20 Q25 15 35 22 Q40 28 35 35 Q25 42 20 38 Q12 32 15 25 Z" fill="none" stroke="#1B1F23" stroke-width="2.5" stroke-linecap="round"/>
-  <path d="M45 18 Q55 16 62 22 Q65 27 62 33 Q55 39 48 36 Q43 31 45 26 Z" fill="none" stroke="#1B1F23" stroke-width="2.5" stroke-linecap="round"/>
-  <path d="M25 50 L32 57 L55 35" fill="none" stroke="#B5C99A" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+  
+  <!-- Black curved lines forming the main shape -->
+  <path d="M25 30 C30 25 35 25 40 30 C45 35 50 40 55 35" fill="none" stroke="#1B1F23" stroke-width="3.5" stroke-linecap="round"/>
+  <path d="M65 30 C70 35 70 40 65 45" fill="none" stroke="#1B1F23" stroke-width="3.5" stroke-linecap="round"/>
+  
+  <!-- Green checkmark -->
+  <path d="M30 40 L35 45 L45 35" fill="none" stroke="#B5C99A" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"/>
 </svg>
