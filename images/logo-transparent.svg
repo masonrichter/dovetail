@@ -1,22 +1,6 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 300" width="400" height="300">
-  <!-- Light gray curved lines forming the main shape -->
-  <path d="M20 20 Q80 10 140 40 Q180 60 200 100 Q220 140 180 180 Q140 220 100 200 Q60 180 40 140 Q20 100 20 60 Z" 
-        fill="none" 
-        stroke="#EDEDED" 
-        stroke-width="12" 
-        stroke-linecap="round"/>
-  
-  <path d="M280 10 Q340 5 380 30 Q400 50 390 80 Q380 110 350 130 Q320 150 290 140 Q260 130 250 100 Q240 70 260 50 Q280 30 280 10 Z" 
-        fill="none" 
-        stroke="#EDEDED" 
-        stroke-width="12" 
-        stroke-linecap="round"/>
-  
-  <!-- Bright green checkmark -->
-  <path d="M150 210 L180 240 L240 180" 
-        fill="none" 
-        stroke="#B5C99A" 
-        stroke-width="10" 
-        stroke-linecap="round" 
-        stroke-linejoin="round"/>
-</svg> 
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 80 80" width="80" height="80">
+  <circle cx="40" cy="40" r="38" fill="#FFFFFF" stroke="#E5E5E5" stroke-width="1"/>
+  <path d="M15 20 Q25 15 35 22 Q40 28 35 35 Q25 42 20 38 Q12 32 15 25 Z" fill="none" stroke="#1B1F23" stroke-width="2.5" stroke-linecap="round"/>
+  <path d="M45 18 Q55 16 62 22 Q65 27 62 33 Q55 39 48 36 Q43 31 45 26 Z" fill="none" stroke="#1B1F23" stroke-width="2.5" stroke-linecap="round"/>
+  <path d="M25 50 L32 57 L55 35" fill="none" stroke="#B5C99A" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
